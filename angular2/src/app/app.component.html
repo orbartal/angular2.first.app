@@ -1,0 +1,13 @@
+<p>app.component.html</p>
+
+<p>Link list</p>
+<ul>
+  <!-- This directive generates our link based on the route path -->
+  <li><a [routerLink] = "['/1Hello']">1. Hello</a></li>
+</ul>
+<p>--Start selected page content--</p>
+<!-- Angular will insert  here the component we want to route to on the view -->
+<router-outlet></router-outlet>
+<p>--End selected page content--</p>
+<p>A fix message from  hello:</p>
+<my-hello></my-hello>
