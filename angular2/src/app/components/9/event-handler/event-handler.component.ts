@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 
 @Component ({
-   selector: 'my-app',
+   selector: 'my-click-event-handler',
    templateUrl:  '/app/components/9/event-handler/event-handler.component.html',
 })
 
 export class HaventHandlerComponent {
-   status: boolean = true;
+   bStatus: boolean = true;
    clicked(event) {
-      status = !this.status;
+        this.bStatus = !this.bStatus;
    }
 }

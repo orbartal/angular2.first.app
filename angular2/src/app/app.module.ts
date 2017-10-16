@@ -14,6 +14,7 @@ import { ProductFormComponent } from './components/6/products/form/product-form.
 import { PageNotFoundComponent } from  './components/7/page-not-found/page-not-found.component';
 import { HelloInjectComponent } from  './components/8/injectable/component/hello.inject.component';
 import { HaventHandlerComponent } from  './components/9/event-handler/event-handler.component';
+import { TransformsComponent } from  './components/10/transforms/transforms.component';
 
 import { AppComponent }  from './app.component';
 
@@ -28,6 +29,7 @@ const appRoutes: Routes = [
    { path: '7PageNotFoundComponent', component: PageNotFoundComponent },
    { path: '8HelloInjectComponent', component: HelloInjectComponent },
    { path: '9HaventHandlerComponent', component: HaventHandlerComponent },
+   { path: '10TransformsComponent', component: TransformsComponent },
    { path: '**', component: PageNotFoundComponent },
 ];
 
@@ -35,7 +37,8 @@ const appRoutes: Routes = [
   imports:      [ BrowserModule, RouterModule.forRoot(appRoutes), HttpModule, FormsModule ],
   declarations: [ AppComponent, AppHello,  AppVariables, AppTemplateUrl,
                   ApIfFor, ApImages, AppProductsCrud, ProductFormComponent,
-                  PageNotFoundComponent, HelloInjectComponent, HaventHandlerComponent ],
+                  PageNotFoundComponent, HelloInjectComponent, HaventHandlerComponent,
+                  TransformsComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
