@@ -12,6 +12,9 @@ import { ApImages } from './components/5/images/images.component';
 import { AppProductsCrud }  from './components/6/products/crud/crud.component';
 import { ProductFormComponent } from './components/6/products/form/product-form.component';
 import { PageNotFoundComponent } from  './components/7/page-not-found/page-not-found.component';
+import { HelloInjectComponent } from  './components/8/injectable/component/hello.inject.component';
+import { HaventHandlerComponent } from  './components/9/event-handler/event-handler.component';
+
 import { AppComponent }  from './app.component';
 
 //Will be used to map url to pages\component in src\app\app.component.html
@@ -23,14 +26,16 @@ const appRoutes: Routes = [
    { path: '5ImagesFromUtl', component: ApImages },
    { path: '6AppProductsCrud', component: AppProductsCrud },
    { path: '7PageNotFoundComponent', component: PageNotFoundComponent },
-  { path: '**', component: PageNotFoundComponent },
+   { path: '8HelloInjectComponent', component: HelloInjectComponent },
+   { path: '9HaventHandlerComponent', component: HaventHandlerComponent },
+   { path: '**', component: PageNotFoundComponent },
 ];
 
 @NgModule({
   imports:      [ BrowserModule, RouterModule.forRoot(appRoutes), HttpModule, FormsModule ],
   declarations: [ AppComponent, AppHello,  AppVariables, AppTemplateUrl,
                   ApIfFor, ApImages, AppProductsCrud, ProductFormComponent,
-                  PageNotFoundComponent ],
+                  PageNotFoundComponent, HelloInjectComponent, HaventHandlerComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
