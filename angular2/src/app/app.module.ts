@@ -16,6 +16,8 @@ import { HelloInjectComponent } from  './components/8/injectable/component/hello
 import { HaventHandlerComponent } from  './components/9/event-handler/event-handler.component';
 import { TransformsComponent } from  './components/10/transforms/transforms.component';
 import {MultiplierPipe} from './components/10/transforms/pipes/multiplier.pipe'
+import { ChildComponent } from  './components/11/child/child.component';
+import { ParentComponent } from  './components/11/parent/parent.component';
 
 import { AppComponent }  from './app.component';
 
@@ -27,10 +29,11 @@ const appRoutes: Routes = [
    { path: '4IfFor', component: ApIfFor },
    { path: '5ImagesFromUtl', component: ApImages },
    { path: '6AppProductsCrud', component: AppProductsCrud },
-   { path: '7PageNotFoundComponent', component: PageNotFoundComponent },
-   { path: '8HelloInjectComponent', component: HelloInjectComponent },
-   { path: '9HaventHandlerComponent', component: HaventHandlerComponent },
-   { path: '10TransformsComponent', component: TransformsComponent },
+   { path: '7PageNotFound', component: PageNotFoundComponent },
+   { path: '8HelloInject', component: HelloInjectComponent },
+   { path: '9HaventHandler', component: HaventHandlerComponent },
+   { path: '10Transforms', component: TransformsComponent },
+   { path: '11ParentChild', component: ParentComponent },
    { path: '**', component: PageNotFoundComponent },
 ];
 
@@ -39,7 +42,7 @@ const appRoutes: Routes = [
   declarations: [ AppComponent, AppHello,  AppVariables, AppTemplateUrl,
                   ApIfFor, ApImages, AppProductsCrud, ProductFormComponent,
                   PageNotFoundComponent, HelloInjectComponent, HaventHandlerComponent,
-                  TransformsComponent, MultiplierPipe ],
+                  TransformsComponent, MultiplierPipe, ChildComponent, ParentComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
