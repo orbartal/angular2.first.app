@@ -1,0 +1,9 @@
+<h1>crud</h1>
+<product-form></product-form>
+<div *ngFor = 'let item of appList'>
+   <ul>
+      <li>{{item.ID}}</li>
+      <li>{{item.Name}}</li>
+      <img [src] = 'item.url'>
+   </ul>
+</div>

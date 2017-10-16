@@ -1,0 +1,21 @@
+<h1>form</h1>
+
+<div class = "container">
+   <h1>Product Form</h1>
+   <form>
+
+      <div class = "form-group">
+         <label for = "productIdInput">ID</label>
+         <input type = "text" [(ngModel)] = "product.id" name = "id" class = "form-control" id = "productIdInput" required>
+      </div>
+
+      <div class = "form-group">
+         <label for = "productNameInput">Name</label>
+         <input type = "text" class = "form-control" id = "productNameInput" [(ngModel)] = "product.name" name = "name" required>
+      </div>
+
+   </form>
+</div>
+
+<p>{{product.id}} </p>
+<p>{{product.name}} </p>
