@@ -1,0 +1,6 @@
+/angular2/src/**/*.js
+/angular2/src/**/*.map
+!/angular2/src/systemjs.config.js
+/angular2/*.js.map
+/angular2/typings
+/angular2/node_modules
